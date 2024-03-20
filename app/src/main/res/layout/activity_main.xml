@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--Строка выражения-->
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <!--Строка результата-->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_sqrt"
+                style="@style/Operations_Sci"
+                android:text="sqrt"></TextView>
+
+            <TextView
+                android:id="@+id/b_log2"
+                style="@style/Operations_Sci"
+                android:text="log2"></TextView>
+
+            <TextView
+                android:id="@+id/b_ln"
+                style="@style/Operations_Sci"
+                android:text="ln"></TextView>
+
+            <TextView
+                android:id="@+id/b_leftb"
+                style="@style/Operations_Sci"
+                android:text="("></TextView>
+
+            <TextView
+                android:id="@+id/b_rightb"
+                style="@style/Operations_Sci"
+                android:text=")"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_xy"
+                style="@style/Operations_Sci"
+                android:text="x^y"></TextView>
+
+            <TextView
+                android:id="@+id/b_AC"
+                style="@style/Operations"
+                android:text="AC"></TextView>
+
+            <TextView
+                android:id="@+id/b_back"
+                style="@style/Operations"
+                android:text="back"></TextView>
+
+            <TextView
+                android:id="@+id/b_percent"
+                style="@style/Operations"
+                android:text="%"></TextView>
+
+            <TextView
+                android:id="@+id/b_div"
+                style="@style/Operations"
+                android:text="/"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_sin"
+                style="@style/Operations_Sci"
+                android:text="sin"></TextView>
+
+            <TextView
+                android:id="@+id/b_seven"
+                style="@style/Numbers"
+                android:text="7"></TextView>
+
+            <TextView
+                android:id="@+id/b_eight"
+                style="@style/Numbers"
+                android:text="8"></TextView>
+
+            <TextView
+                android:id="@+id/b_nine"
+                style="@style/Numbers"
+                android:text="9"></TextView>
+
+            <TextView
+                android:id="@+id/b_mul"
+                style="@style/Operations"
+                android:text="*"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_cos"
+                style="@style/Operations_Sci"
+                android:text="cos"></TextView>
+
+            <TextView
+                android:id="@+id/b_four"
+                style="@style/Numbers"
+                android:text="4"></TextView>
+
+            <TextView
+                android:id="@+id/b_five"
+                style="@style/Numbers"
+                android:text="5"></TextView>
+
+            <TextView
+                android:id="@+id/b_six"
+                style="@style/Numbers"
+                android:text="6"></TextView>
+
+            <TextView
+                android:id="@+id/b_sub"
+                style="@style/Operations"
+                android:text="-"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_pi"
+                style="@style/Operations_Sci"
+                android:text="pi"></TextView>
+
+            <TextView
+                android:id="@+id/b_one"
+                style="@style/Numbers"
+                android:text="1"></TextView>
+
+            <TextView
+                android:id="@+id/b_two"
+                style="@style/Numbers"
+                android:text="2"></TextView>
+
+            <TextView
+                android:id="@+id/b_three"
+                style="@style/Numbers"
+                android:text="3"></TextView>
+
+            <TextView
+                android:id="@+id/b_add"
+                style="@style/Operations"
+                android:text="+"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_e"
+                style="@style/Operations_Sci"
+                android:text="e"></TextView>
+
+            <TextView
+                android:id="@+id/b_zerotr"
+                style="@style/Numbers"
+                android:text="000"></TextView>
+
+            <TextView
+                android:id="@+id/b_dote"
+                style="@style/Numbers"
+                android:text="."></TextView>
+
+            <TextView
+                android:id="@+id/b_zero"
+                style="@style/Numbers"
+                android:text="0"></TextView>
+
+            <TextView
+                android:id="@+id/b_res"
+                style="@style/Operations"
+                android:background="@color/color_equal"
+                android:text="="
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
